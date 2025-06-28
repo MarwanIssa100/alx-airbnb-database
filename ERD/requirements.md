@@ -1,0 +1,1 @@
+![airbnb_erd](M:\Alx\repos\alx-airbnb-database\ERD\airbnb_erd.drawio.png)
