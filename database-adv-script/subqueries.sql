@@ -1,4 +1,4 @@
 use alx_airbnb;
-select booking_id from booking group by user_id having count(user_id) > 3 ;
-select p_name from property where property_id in(select property_id from review  GROUP BY property_id HAVING AVG(rating) > 4.0);
-select first_name,last_name , user_id from user where ( select count(*) from booking as b where user_id = b.user_id ) > 3;
+SELECT booking_id FROM booking GROUP BY user_id HAVING count(user_id) > 3 ;
+SELECT p_name FROM property WHERE property_id in(SELECT property_id FROM review  GROUP BY property_id HAVING AVG(rating) > 4.0);
+SELECT first_name,last_name , user_id FROM user WHERE ( SELECT COUNT(*) FROM booking as b WHERE user_id = b.user_id ) > 3;
